@@ -1,0 +1,11 @@
+{
+  "name": "pi-cost",
+  "version": "0.1.0",
+  "description": "DeepSeek balance and session cost (CNY) in the pi status bar",
+  "type": "module",
+  "keywords": ["pi-package", "pi-extension", "deepseek", "cost", "balance"],
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "license": "MIT"
+}
