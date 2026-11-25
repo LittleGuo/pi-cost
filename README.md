@@ -16,17 +16,22 @@
 ## 安装
 
 ```bash
-# 从 GitHub（推荐，换成你的仓库地址）
-pi install git:github.com/<user>/pi-cost@main
+pi install git:github.com/LittleGuo/pi-cost@main
+```
 
-# 或本地目录
+装完在会话里 `/reload` 或重启 pi。`pi list` 里能看到 `pi-cost` 即成功。
+
+其它方式：
+
+```bash
+# 本地目录（改代码后 /reload 直接生效，不用重装）
 pi install /path/to/pi-cost
 
-# 或只临时试用一次
+# 只临时试用一次，不写入配置
 pi -e /path/to/pi-cost
 ```
 
-装完在会话里 `/reload` 或重启 pi。卸载：`pi remove git:github.com/<user>/pi-cost`。
+卸载：`pi remove git:github.com/LittleGuo/pi-cost`
 
 要求：pi 1.6+，供应商为 `deepseek`（`https://api.deepseek.com`），已通过 `DEEPSEEK_API_KEY` 或 `/login deepseek` 配好 key。
 
